@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Vidaloka&display=swap');
+
+body {
+    font-family: 'Vidaloka', serif;
+    color: #9b4d1a;
+    background-color: #f0cbb2;
+    font: bold;
+}
+
+h1{
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 5px #cc9c6f;
+}
+
+.h2{
+    display: flex;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px #f0ae78;
+
+}
+
+.flexHorizontal {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.flexVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.flexCentral {
+    display: flex;
+    justify-content: center;
+}
+
+.textoCentralizado {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+fieldset {
+    border: solid #eaac76 2px;
+    padding: none;
+    border-radius: 10px;
+}   
+
+form {
+    max-width: 800px;
+
+    border-radius: 20px;
+    border: 3px solid ;
+    padding: 10px;
+    margin: auto;
+    background-color: #ffeeddb5;
+    
+}
+
+div {
+    margin: 5px;
+}
+
+label {
+    display: block;
+}
+
+label.labelInline {
+    display: inline;
+}
+
+input, button {
+    outline: none;
+}
+
+input {
+    border: 1px solid ;
+    transition: border 0.25s linear;
+    border-radius: 5px;
+}
+
+select {
+    border: 1px solid ;
+    transition: border 0.25s linear;
+    border-radius: 5px;
+}
+
+
+button {
+    transition: box-shadow 0.25s linear;
+    cursor: pointer;
+    color: #984610;
+    background-color: #f0cbb2;
+    border-radius: 5px;
+    border: solid #e2b48c 1.5px;
+}
+
+button:hover {
+    
+    box-shadow: 2px 2px 2px 0 #d38653;
+}

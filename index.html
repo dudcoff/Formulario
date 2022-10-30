@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form>
+    <h1>Formulário de Cadastro</h1>
+    
+    <fieldset>
+        <legend class="h2">Dados Pessoais</legend>
+        <div class="flexHorizontal">
+    <div>
+    <label for="nomeUsuario">Nome completo:</label>
+    <input type="text" id="nomeUsuario" name="nomeUsuario" required>
+    </div>
+
+    <div>
+    <label for="estadoCivil">Estado civil:</label>
+    <select name="estadoCivil" id="estadoCivil" required>
+
+    <option value="">-- Selecione --</option>
+    <option value="1">Solteiro(a)</option>
+    <option value="2">Casado(a)</option>
+    <option value="3">Divorciado(a)</option>
+    <option value="4">Viúvo(a)</option>
+    </select>
+    </div>
+        </div>
+
+    <div class="flexHorizontal">
+        <div>
+    <label for="emailUsuario">Email:</label>
+    <input type="email" name="emailUsuario" id="emailUsuario" required>
+        </div>
+
+        <div>
+    <label for="telefoneUsuario">Telefone (opcional): </label>
+    <input type="tel" name="telefoneUsuario" id="telefoneUsuario">
+        </div>
+    </div>
+
+        <div>
+    <p class="textoCentralizado">Contatar via</p> 
+    <div class="flexCentral">
+
+        <div>
+    <input type="radio" name="Contatar via" id="PorEmail">
+    <label for="PorEmail" class="labelInline">Email</label>
+        </div>
+                    
+        <div>
+    <input type="radio" name="Contatar via" id="Contatar via">
+    <label for="PorTelefone" class="labelInline">Telefone</label>
+        </div>
+     </div> <!--fecha flexCentral -->
+        </div>
+    </fieldset> <!-- dados pessoais -->
+
+    <fieldset class="flexVertical"> 
+        <legend class="h2">Endereço</legend>
+        <div class="flexHorizontal">
+
+        <div> 
+    <label for="logradouroUsuario">Logradouro:</label>
+    <input type="text" name="logradouroUsuario" id="logradouroUsuario" required>
+        </div>
+
+        <div>
+    <label for="numeroCasaUsuario">Número:</label>
+    <input type="number" name="numeroCasaUsuario" id="numeroCasaUsuario" required>
+        </div>
+        </div> <!--fecha felxH1 -->
+
+        <div class="flexHorizontal"> 
+        <div>
+    <label for="bairroUsuario">Bairro (opcional):</label>
+    <input type="text" name="bairroUsuario" id="bairroUsuario">
+        </div>
+
+        <div>
+    <label for="cidadeUsuario">Cidade:</label>
+    <input type="text" name="cidadeUsuario" id="cidadeUsuario" required>
+        </div> 
+        </div> <!--fecha felxHori2 -->
+
+        <div class="flexHorizontal"> 
+        <div>
+    <label for="estadoUsuario">Estado:</label>
+
+    <select name="estadoUsuario" id="estadoUsuario">
+
+    <option value="">-- Selecione --</option> 
+    <option value="Acre">AC</option>
+    <option value="Alagoas">AL</option>
+    <option value="Amazonas">AM</option>
+    <option value="Amapa">AP</option>
+    <option value="Bahia">BA</option>
+    <option value="Ceara">CE</option>
+    <option value="DistritoFederal">DF</option>
+    <option value="EspiritoSanto">ES</option>
+    <option value="Goias">GO</option>
+    <option value="Maranhao">MA</option>
+    <option value="MinasGerais">MG</option>
+    <option value="MatoGrossoDoSul">MS</option>
+    <option value="MatoGrosso">MT</option>
+    <option value="Para">PA</option>
+    <option value="Paraiba">PB</option>
+    <option value="Pernambuco">PE</option>
+    <option value="Piaui">PI</option>
+    <option value="Parana">PR</option>
+    <option value="RioDeJaneiro">RJ</option>
+    <option value="RioGrandeDoNorte">RN</option>
+    <option value="Rondonia">RO</option>
+    <option value="Roraima">RR</option>
+    <option value="RioGrandeDoSul">RS</option>
+    <option value="SantaCatarina">SC</option>
+    <option value="Sergipe">SE</option>
+    <option value="SaoPaulo">SP</option>
+    <option value="Tocantins">TO</option>
+    </select>
+        </div>
+            <div>
+                <label for="cepUsuario">CEP:</label>
+                <input type="text" name="cepUsuario" id="cepUsuario" required> 
+            </div>
+        </div>
+    </fieldset> <!-- fecha flexVer -->
+
+    <div>
+        <input type="checkbox" name="liConcordo" id="liConcordo">
+        <label for="liConcordo" class="labelInline">Li e Concordo</label>
+    </div>
+    
+    <div class="flexHorizontal">
+        <button id="botaoEnviar" type="submit">Enviar</button>
+        <button id="botaoLimpar" type="reset">Limpar</button>
+    </div>
+</form>
+
+</body>
+</html>
